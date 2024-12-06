@@ -23,8 +23,14 @@ export default defineConfig({
         orientation: "any",
         icons: [
           {
-            src: "/PWA003/icons/icon-any.svg",
-            sizes: "any",
+            src: "/PWA003/icons/icon-144.svg",
+            sizes: "144x144",
+            type: "image/svg+xml",
+            purpose: "any"
+          },
+          {
+            src: "/PWA003/icons/icon-512.svg",
+            sizes: "512x512",
             type: "image/svg+xml",
             purpose: "any"
           },
