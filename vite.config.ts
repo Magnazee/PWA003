@@ -23,13 +23,13 @@ export default defineConfig({
         orientation: "any",
         icons: [
           {
-            src: "/icons/icon-any.svg",
+            src: "/PWA003/icons/icon-any.svg",
             sizes: "any",
             type: "image/svg+xml",
             purpose: "any"
           },
           {
-            src: "/icons/icon-maskable.svg",
+            src: "/PWA003/icons/icon-maskable.svg",
             sizes: "any",
             type: "image/svg+xml",
             purpose: "maskable"
@@ -37,10 +37,15 @@ export default defineConfig({
         ],
         screenshots: [
           {
-            src: "/screenshots/desktop.svg",
+            src: "/PWA003/screenshots/desktop.svg",
             sizes: "1920x1080",
             type: "image/svg+xml",
             form_factor: "wide"
+          },
+          {
+            src: "/PWA003/screenshots/mobile.svg",
+            sizes: "430x932",
+            type: "image/svg+xml"
           }
         ]
       },
