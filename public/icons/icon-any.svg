@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#4B0082" rx="64"/>
+  
+  <!-- Dashboard elements -->
+  <rect x="96" y="96" width="144" height="144" fill="#ffffff" rx="16"/>
+  <rect x="272" y="96" width="144" height="144" fill="#ffffff" rx="16"/>
+  <rect x="96" y="272" width="144" height="144" fill="#ffffff" rx="16"/>
+  <rect x="272" y="272" width="144" height="144" fill="#ffffff" rx="16"/>
+  
+  <!-- Some decorative lines -->
+  <line x1="120" y1="140" x2="216" y2="140" stroke="#4B0082" stroke-width="12"/>
+  <line x1="296" y1="140" x2="392" y2="140" stroke="#4B0082" stroke-width="12"/>
+  <line x1="120" y1="316" x2="216" y2="316" stroke="#4B0082" stroke-width="12"/>
+  <line x1="296" y1="316" x2="392" y2="316" stroke="#4B0082" stroke-width="12"/>
+</svg>

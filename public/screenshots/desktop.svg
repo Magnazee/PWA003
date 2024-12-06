@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1920" height="80" fill="#4B0082"/>
+  <text x="40" y="50" font-family="Arial" font-size="24" fill="#ffffff">Project in a Day Dashboard</text>
+  
+  <!-- Main content -->
+  <g transform="translate(40, 120)">
+    <!-- Progress Overview -->
+    <text x="0" y="40" font-family="Arial" font-size="28" fill="#000000">Progress Overview</text>
+    
+    <!-- Stat boxes -->
+    <rect x="0" y="60" width="200" height="120" fill="#f0f0f0" rx="8"/>
+    <rect x="220" y="60" width="200" height="120" fill="#f0f0f0" rx="8"/>
+    <rect x="440" y="60" width="200" height="120" fill="#f0f0f0" rx="8"/>
+    
+    <!-- Timeline section -->
+    <text x="0" y="240" font-family="Arial" font-size="28" fill="#000000">Timeline</text>
+    <rect x="0" y="260" width="840" height="300" fill="#f0f0f0" rx="8"/>
+    
+    <!-- Projects section -->
+    <text x="0" y="620" font-family="Arial" font-size="28" fill="#000000">Projects</text>
+    <rect x="0" y="640" width="840" height="300" fill="#f0f0f0" rx="8"/>
+  </g>
+  
+  <!-- Side panel -->
+  <rect x="920" y="120" width="360" height="920" fill="#f0f0f0" rx="8"/>
+</svg>
