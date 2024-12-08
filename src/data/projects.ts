@@ -62,15 +62,18 @@ export const projects: Project[] = [
   {
     id: 'pwa004',
     name: 'Speech to Text',
-    description: 'Speech recognition PWA with real-time text display',
-    status: 'in-progress',
+    description: 'Speech recognition PWA with multi-language support',
+    status: 'completed',
     startDate: '2024-12-07',
+    endDate: '2024-12-08',
     repo: 'https://github.com/Magnazee/PWA004',
+    demo: 'https://magnazee.github.io/PWA004/',
     features: [
-      'Speech recognition',
-      'Real-time text display',
-      'Status indicators',
-      'Error handling'
+      'Real-time speech recognition',
+      'English and Finnish language support',
+      'Language toggle interface',
+      'Error handling and status indicators',
+      'Full PWA capabilities'
     ]
   },
   {
