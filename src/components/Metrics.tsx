@@ -3,7 +3,6 @@ import { projects } from '../data/projects'
 export function Metrics() {
   const completedProjects = projects.filter(p => p.status === 'completed').length
   const inProgressProjects = projects.filter(p => p.status === 'in-progress').length
-  const totalProjects = projects.length
   const plannedProjects = projects.filter(p => p.status === 'planned').length
 
   // Calculate days active
