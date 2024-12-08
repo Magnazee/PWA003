@@ -1,8 +1,8 @@
 import { CheckCircle2, Circle, CircleDot } from 'lucide-react'
 
 const metrics = {
-  completed: 2,
-  inProgress: 1,
+  completed: 3,
+  inProgress: 0,
   planned: 3,
   total: 6
 }

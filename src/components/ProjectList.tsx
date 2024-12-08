@@ -18,8 +18,8 @@ const projects = [
   { 
     id: 'PWA003', 
     name: 'Project Dashboard', 
-    status: 'in-progress', 
-    date: 'December 5, 2024',
+    status: 'completed', 
+    date: 'December 5-6, 2024',
     url: 'https://magnazee.github.io/PWA003/'
   },
 ]
