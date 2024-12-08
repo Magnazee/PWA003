@@ -1,67 +1,59 @@
-import { Check, AlertCircle, Clock, ExternalLink } from 'lucide-react'
+import { projects } from '../data/projects'
 
-const projects = [
-  { 
-    id: 'PWA001', 
-    name: 'Rainbow Hello World', 
-    status: 'completed', 
-    date: 'December 3, 2024',
-    url: 'https://magnazee.github.io/PWA001/'
-  },
-  { 
-    id: 'PWA002', 
-    name: 'Voice Rainbow', 
-    status: 'completed', 
-    date: 'December 4-5, 2024',
-    url: 'https://magnazee.github.io/PWA002/'
-  },
-  { 
-    id: 'PWA003', 
-    name: 'Project Dashboard', 
-    status: 'completed', 
-    date: 'December 5-6, 2024',
-    url: 'https://magnazee.github.io/PWA003/'
-  },
-]
+const statusColors = {
+  'completed': 'bg-green-100 text-green-800',
+  'in-progress': 'bg-blue-100 text-blue-800',
+  'planned': 'bg-gray-100 text-gray-800'
+}
 
 export function ProjectList() {
   return (
-    <div className="bg-white shadow rounded-lg p-6">
-      <h2 className="text-xl font-semibold mb-4">Projects</h2>
-      <div className="space-y-4">
+    <div className="bg-white rounded-lg shadow">
+      <div className="px-6 py-4 border-b">
+        <h2 className="text-xl font-semibold">Projects</h2>
+      </div>
+      <div className="divide-y">
         {projects.map((project) => (
-          <div key={project.id} className="flex items-center justify-between p-4 border rounded-lg">
-            <div className="flex-1">
-              <div className="flex items-center gap-2">
-                <h3 className="font-medium">{project.id}: {project.name}</h3>
-                <a 
-                  href={project.url} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-blue-600 hover:text-blue-800 inline-flex items-center"
-                >
-                  <ExternalLink size={14} />
-                </a>
+          <div key={project.id} className="p-6">
+            <div className="flex justify-between items-start">
+              <div>
+                <h3 className="text-lg font-medium">{project.name}</h3>
+                <p className="mt-1 text-gray-600">{project.description}</p>
               </div>
-              <p className="text-sm text-gray-500">{project.date}</p>
+              <span className={`px-3 py-1 rounded-full text-sm font-medium ${statusColors[project.status]}`}>
+                {project.status.charAt(0).toUpperCase() + project.status.slice(1)}
+              </span>
             </div>
-            <div className="flex items-center gap-2">
-              {project.status === 'completed' && (
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                  <Check size={12} className="mr-1" /> Completed
-                </span>
-              )}
-              {project.status === 'in-progress' && (
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
-                  <Clock size={12} className="mr-1" /> In Progress
-                </span>
-              )}
-              {project.status === 'blocked' && (
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">
-                  <AlertCircle size={12} className="mr-1" /> Blocked
-                </span>
-              )}
+            <div className="mt-4">
+              <h4 className="text-sm font-medium text-gray-500 mb-2">Features</h4>
+              <ul className="list-disc list-inside space-y-1 text-gray-600">
+                {project.features.map((feature, index) => (
+                  <li key={index} className="text-sm">{feature}</li>
+                ))}
+              </ul>
             </div>
+            {project.repo && (
+              <div className="mt-4 flex space-x-4">
+                <a
+                  href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-blue-500 hover:text-blue-600"
+                >
+                  View Repository →
+                </a>
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-blue-500 hover:text-blue-600"
+                  >
+                    View Demo →
+                  </a>
+                )}
+              </div>
+            )}
           </div>
         ))}
       </div>
