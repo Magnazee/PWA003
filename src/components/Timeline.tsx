@@ -1,9 +1,4 @@
-interface Project {
-  id: string
-  name: string
-  status: string
-  date: string
-}
+import { type Project } from './Dashboard'
 
 interface TimelineProps {
   projects: Project[]
@@ -19,7 +14,12 @@ export function Timeline({ projects }: TimelineProps) {
             <div key={project.id} className="flex items-start">
               <div className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-blue-500" />
               <div className="ml-4">
-                <p className="font-medium">{project.id}: {project.name}</p>
+                <a 
+                  href={`#project-${project.id}`}
+                  className="font-medium text-blue-600 hover:text-blue-800"
+                >
+                  {project.id}: {project.name}
+                </a>
                 <p className="text-sm text-gray-500">{project.date}</p>
               </div>
             </div>
