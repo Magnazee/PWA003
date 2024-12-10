@@ -78,10 +78,28 @@ export const projects: Project[] = [
   },
   {
     id: 'pwa005',
+    name: 'Claude Chat PWA',
+    description: 'PWA for interacting with Claude AI',
+    status: 'completed',
+    startDate: '2024-12-09',
+    endDate: '2024-12-09',
+    repo: 'https://github.com/Magnazee/PWA005',
+    demo: 'https://magnazee.github.io/PWA005/',
+    features: [
+      'GitHub Pages frontend',
+      'Vercel serverless backend',
+      'Claude API integration',
+      'Cross-origin communication',
+      'Secure API key handling',
+      'Error handling and status displays'
+    ]
+  },
+  {
+    id: 'pwa006',
     name: 'Voice Commander',
     description: 'Advanced voice recognition and command system',
     status: 'planned',
-    startDate: '2024-12-09',
+    startDate: '2024-12-10',
     features: [
       'Command system architecture',
       'Multi-language support',
