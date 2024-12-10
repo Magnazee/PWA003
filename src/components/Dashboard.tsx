@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function Dashboard() {
   const projects = [
     { id: 'PWA001', name: 'Hello World PWA', status: 'Completed', date: 'Dec 3, 2024' },
