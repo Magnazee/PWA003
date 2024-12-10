@@ -19,7 +19,7 @@ export function Dashboard() {
         </div>
         <div className="w-24 h-24">
           <img 
-            src="/sleepy-owl.svg" 
+            src="/PWA003/sleepy-owl.svg" 
             alt="Sleepy owl" 
             className="w-full h-full"
             title="Time to rest! We'll continue tomorrow."
